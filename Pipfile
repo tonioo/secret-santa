@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sqlmodel = "*"
+fastapi = {extras = ["standard"], version = "*"}
+pydantic-settings = "*"
+psycopg2-binary = "*"
+
+[dev-packages]
+python-lsp-server = {extras = ["all"], version = "*"}
+pylsp-mypy = "*"
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.3"

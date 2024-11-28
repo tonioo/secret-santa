@@ -1,0 +1,25 @@
+services:
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: secretsanta
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    environment:
+      DEBUG: 1
+      DB_URL: postgresql://user:password@database/secretsanta
+
+    ports:
+      - "8000:8000"
+    command: "fastapi dev --host 0.0.0.0"
+    depends_on:
+      - database
+    links:
+      - database
+    volumes:
+      - .:/app
