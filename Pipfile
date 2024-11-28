@@ -8,10 +8,12 @@ sqlmodel = "*"
 fastapi = {extras = ["standard"], version = "*"}
 pydantic-settings = "*"
 psycopg2-binary = "*"
+pytest-env = "*"
 
 [dev-packages]
 python-lsp-server = {extras = ["all"], version = "*"}
 pylsp-mypy = "*"
+pytest-env = "*"
 
 [requires]
 python_version = "3.12"

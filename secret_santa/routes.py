@@ -118,7 +118,7 @@ def create_list_draw(*, session: Session = Depends(get_session), list_id: int):
     return draw
 
 
-@router.post(
+@router.get(
     "/lists/{list_id}/latest_draws",
     summary="Return the 5 latest draws of the given list",
     response_model=list[models.DrawPublic],

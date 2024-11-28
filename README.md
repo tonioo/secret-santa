@@ -31,3 +31,21 @@ Once everything is started, you will be able to access the API documentation at 
 
 http://localhost:8000/docs
 
+## Run tests
+
+[!NOTE]
+You will need pipenv to install required dependencies.
+
+Run the following commands to setup test environment:
+
+```bash
+$ pip install pipenv
+$ pipenv --python 3.12
+$ pipenv install --dev
+```
+
+Then, you can run the test suite as follows:
+
+```bash
+$ pipenv run pytest secret_santa/tests.py
+```

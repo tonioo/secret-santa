@@ -63,9 +63,9 @@ class DrawItem(SQLModel, table=True):
     draw_id: int | None = Field(default=None, foreign_key="draw.id", primary_key=True)
     draw: Draw = Relationship(back_populates="items")
     giver_id: int | None = Field(default=None, foreign_key="participant.id", primary_key=True)
-    giver: Draw = Relationship()
+    # giver: Draw = Relationship()
     receiver_id: int | None = Field(default=None, foreign_key="participant.id", primary_key=True)
-    receiver: Draw = Relationship()
+    # receiver: Draw = Relationship()
 
 
 class DrawPublic(DrawBase):
