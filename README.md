@@ -1,6 +1,6 @@
 # Secret Santa draw
 
-## TLDR
+## Introduction
 
 This repository contains the source code of a RESTFul API which allows the generation of *Secret Santa* draws.
 
@@ -8,10 +8,10 @@ This repository contains the source code of a RESTFul API which allows the gener
 
 ## How to play with the API
 
-[!NOTE]
-You will need [docker](https://www.docker.com) and its
-[compose](https://docs.docker.com/compose/) tool to build and run this
-API so make sure they are installed on your environment.
+> [!NOTE]
+> You will need [docker](https://www.docker.com) and its
+> [compose](https://docs.docker.com/compose/) tool to build and run this
+> API so make sure they are installed on your environment.
 
 **The first time**, run the following command:
 
@@ -33,8 +33,8 @@ http://localhost:8000/docs
 
 ## Run tests
 
-[!NOTE]
-You will need pipenv to install required dependencies.
+> [!NOTE]
+> You will need pipenv to install required dependencies.
 
 Run the following commands to setup test environment:
 
